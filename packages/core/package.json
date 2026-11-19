@@ -1,0 +1,17 @@
+{
+  "name": "@popupcare/core",
+  "version": "0.0.1",
+  "private": true,
+  "description": "探窗 PopupCare 共享核心模块：类型定义与纯业务逻辑（网站与扩展共用）",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

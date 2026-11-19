@@ -1,0 +1,20 @@
+{
+  "name": "@popupcare/extension",
+  "version": "0.0.1",
+  "private": true,
+  "description": "探窗 PopupCare Chrome 扩展（Manifest V3，WXT）",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@popupcare/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "wxt": "^0.20.6"
+  }
+}

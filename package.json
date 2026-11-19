@@ -1,0 +1,25 @@
+{
+  "name": "popupcare",
+  "version": "0.0.1",
+  "private": true,
+  "description": "探窗 PopupCare —— 面向全盲用户的 AI 网页弹窗理解与安全交互助手",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @popupcare/web dev",
+    "build": "pnpm run build:web && pnpm run build:ext",
+    "build:web": "pnpm --filter @popupcare/web build",
+    "build:ext": "pnpm --filter @popupcare/extension build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit && pnpm -r typecheck"
+  },
+  "dependencies": {
+    "@popupcare/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

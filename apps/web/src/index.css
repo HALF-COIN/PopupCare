@@ -1,0 +1,25 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  max-width: 40rem;
+  padding: 4rem 1.5rem;
+  line-height: 1.7;
+}
+
+.tagline {
+  font-size: 1.25rem;
+}
+
+.status {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
